@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>login</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<style type="text/css">
+
+div{
+width:500px;
+height:500px;
+border:1px solid red;
+margin:0 auto;
+padding:120px;
+box-sizing:border-box;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+background:#00b86b;
+text-align: center;
+}
+
+button
+{
+color: #fff;
+width: 100%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+.Submit
+{
+background-color: #1c8adb;
+}
+
+.twitter-btn
+{
+background-color: #21afde;
+}
+
+a
+{
+text-decoration: none;
+}
+</style>
+
+<body>
+
+<center><h1> Welcome to login Page</h1></center>
+<hr>
+
+<div>
+<center><h1>SIGN UP NOW</h1></center>
+username:<br>
+<input type="text" name="text" id="username">
+<br><br>
+
+password:<br>
+<input type="password" name="text" id="password">
+<br><br>
+
+
+<button type="button" class="submit-btn"onclick="login()">Submit</button>
+
+</div>
+<script type="text/javascript">
+
+function login()
+{
+var uname=document.getElementById('username').value;
+var pass=document.getElementById('password').value;
+
+if(uname=="shikha" && pass=="12345")
+{
+location.assign("file:///C:/Users/Shikha/document/FrontEndProject/loginsuccessfull.html")
+}
+else
+{
+window.alert("login failed");
+}
+}
+
+</script>
+</body>
+</html>
+
